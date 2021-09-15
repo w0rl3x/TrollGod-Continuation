@@ -16,6 +16,11 @@
  The list of things to do will appear soon.
  
  
+ ## Things already done:
+ 1. DotGod PvPInfo (+custom watermark)
+ 2. Chat Messages Animation
+ 
+ 
  
  ## credits:
  - hollow (base development)
