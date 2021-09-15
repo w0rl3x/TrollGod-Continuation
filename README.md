@@ -7,7 +7,7 @@
  ## TODO:
  1. AutoFeetPlace from OyVey (with echest support) because original autofeetplace is shit (thx to hollow)
  2. Fix AutoTrap / Skid AutoTrap from OyVey.
- 3. SurroundBreaker based off placing and instantly breaking anvils to cause enenmy's surround to be broken and enemy's legs to be exposed to crystals (3arthh4ck 1.0.0 module).
+ 3. SurroundBreaker based off placing under feet and instantly breaking anvils to cause enemy's surround to be broken and enemy's legs to be exposed to crystals (3arthh4ck design).
  4. ShaderChams 
  5. PoptimeESP
  6. Add AlphaAnimation to module renders.
