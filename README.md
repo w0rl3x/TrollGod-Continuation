@@ -13,6 +13,7 @@
  6. Add AlphaAnimation to module renders;
  7. Rewrite GUI to 3arthh4ck 1.0.0 exeter gui;
  8. Overall client features improvements.
+ 9. CapeChanger
  
  The list of things to do will appear soon.
  
