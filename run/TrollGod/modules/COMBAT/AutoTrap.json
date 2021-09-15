@@ -1,0 +1,14 @@
+{
+  "Enabled": false,
+  "Drawn": true,
+  "Bind": "None",
+  "Type": "PRESERVE",
+  "Delay/Place": 50,
+  "Block/Place": 8,
+  "Target Range": 10.0,
+  "Place Range": 6.0,
+  "Anti Self": false,
+  "Retry": false,
+  "Feet": true,
+  "Retries": 4
+}

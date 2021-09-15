@@ -1,0 +1,15 @@
+{
+  "Enabled": false,
+  "Drawn": true,
+  "Bind": "None",
+  "Armor": true,
+  "Size": 0.3,
+  "Ping": true,
+  "TotemPops": true,
+  "Rectangle": true,
+  "Border": true,
+  "GradientBorder": false,
+  "SneakColor": false,
+  "Scale": false,
+  "Factor": 0.3
+}

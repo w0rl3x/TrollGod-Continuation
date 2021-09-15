@@ -1,0 +1,12 @@
+{
+  "Enabled": false,
+  "Drawn": true,
+  "Bind": "None",
+  "XPBottles": true,
+  "Items": true,
+  "Players": true,
+  "Sync": true,
+  "Red": 255,
+  "Green": 255,
+  "Blue": 255
+}

@@ -1,0 +1,12 @@
+{
+  "Enabled": false,
+  "Drawn": true,
+  "Bind": "None",
+  "Rotate": false,
+  "TPS-Sync": true,
+  "Sort by": "DISTANCE",
+  "Range": 5.0,
+  "Sword": "REQUIRE",
+  "Players": true,
+  "Pigs": true
+}

@@ -1,0 +1,19 @@
+{
+  "Enabled": false,
+  "Drawn": true,
+  "Bind": "None",
+  "Page": "MISC",
+  "Range": 5.0,
+  "Box": false,
+  "Outline": false,
+  "Flat": true,
+  "Wireframe": true,
+  "O-Red": 255,
+  "O-Green": 0,
+  "O-Blue": 0,
+  "O-Alpha": 40,
+  "B-Red": 0,
+  "B-Green": 255,
+  "B-Blue": 0,
+  "B-Alpha": 40
+}

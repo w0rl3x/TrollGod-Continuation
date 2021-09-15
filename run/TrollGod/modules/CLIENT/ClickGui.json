@@ -1,0 +1,18 @@
+{
+  "Enabled": false,
+  "Drawn": true,
+  "Bind": "Rcontrol",
+  "Prefix": ".",
+  "Custom Fov": false,
+  "Fov": 150.0,
+  "Red": 126,
+  "Green": 91,
+  "Blue": 255,
+  "Hover Alpha": 60,
+  "Enabled Alpha": 60,
+  "Category Red": 159,
+  "Category Green": 94,
+  "Category Blue": 243,
+  "Category Alpha": 145,
+  "Alpha": 137
+}

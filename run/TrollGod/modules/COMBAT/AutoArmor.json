@@ -1,0 +1,16 @@
+{
+  "Enabled": false,
+  "Drawn": true,
+  "Bind": "None",
+  "Delay": 50,
+  "Auto Mend": false,
+  "Crystal Range": 10,
+  "Enemy Range": 8,
+  "Helmet %": 80,
+  "Chest %": 80,
+  "Legs %": 80,
+  "Boots %": 80,
+  "Curse Of Binding": false,
+  "Actions": 3,
+  "Tps Sync": true
+}

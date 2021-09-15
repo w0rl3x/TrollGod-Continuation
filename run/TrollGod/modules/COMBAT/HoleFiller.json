@@ -1,0 +1,10 @@
+{
+  "Enabled": false,
+  "Drawn": true,
+  "Bind": "Lmenu",
+  "Delay": 0,
+  "Blocks/Tick": 10,
+  "Range": 5.0,
+  "Retries": 1,
+  "Auto Disable": true
+}

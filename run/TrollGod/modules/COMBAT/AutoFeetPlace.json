@@ -1,0 +1,14 @@
+{
+  "Enabled": false,
+  "Drawn": true,
+  "Bind": "C",
+  "Delay/Place": 0,
+  "Block/Place": 20,
+  "Raytrace": false,
+  "HelpingBlocks": true,
+  "Intelligent": false,
+  "Always Help": false,
+  "E-Chests": false,
+  "Retries": 4,
+  "Extensions": 1
+}

@@ -1,0 +1,13 @@
+{
+  "Enabled": true,
+  "Drawn": false,
+  "Bind": "None",
+  "Place Swing": true,
+  "Limit Unfocused": true,
+  "Unfocused FPS": 60,
+  "Tab Tweaks": true,
+  "Highlight Friends": true,
+  "Chat Tweaks": true,
+  "Timestamps": true,
+  "No Rect": true
+}
