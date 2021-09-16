@@ -14,8 +14,7 @@
  7. Rewrite GUI to 3arthh4ck 1.0.0 exeter gui;
  8. Overall client features improvements.
  9. CapeChanger
- 10. PearlSolver
- 11. NoHandAnim
+ 10. NoHandAnim
  
  The list of things to do will appear soon.
  
@@ -23,6 +22,7 @@
  ## Things already done:
  1. DotGod PvPInfo (+custom watermark);
  2. Chat Messages Animation.
+ 3. PearlSolver
  
  
  
