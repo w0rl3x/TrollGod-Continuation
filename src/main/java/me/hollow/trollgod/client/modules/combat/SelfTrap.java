@@ -2,9 +2,12 @@ package me.hollow.trollgod.client.modules.combat;
 
 import me.hollow.trollgod.api.property.Setting;
 import me.hollow.trollgod.api.util.BlockUtil;
+import me.hollow.trollgod.api.util.ItemUtil;
 import me.hollow.trollgod.api.util.Timer;
 import me.hollow.trollgod.client.modules.Module;
 import me.hollow.trollgod.client.modules.ModuleManifest;
+import net.minecraft.init.Blocks;
+import net.minecraft.network.play.client.CPacketHeldItemChange;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3i;
 
@@ -21,6 +24,7 @@ extends Module {
     private final Timer timer = new Timer();
     private final Map<BlockPos, Integer> retries = new HashMap <> ( );
     private int blocksThisTick = 0;
+    private int obbySlot = -1;
 
     @Override
     public void onEnable() {
@@ -73,10 +77,16 @@ extends Module {
 
     private void placeBlock(BlockPos pos) {
         if (this.blocksThisTick < this.blocksPerTick.getValue()) {
+            int lastSlot = this.mc.player.inventory.currentItem;
+            this.obbySlot = ItemUtil.getBlockFromHotbar(Blocks.OBSIDIAN);
+            this.mc.player.inventory.currentItem = this.obbySlot;
+            Objects.requireNonNull ( this.mc.getConnection ( ) ).sendPacket( new CPacketHeldItemChange(this.obbySlot) );
             BlockUtil.placeBlock(pos);
+            mc.player.inventory.currentItem = lastSlot;
             this.timer.reset();
             ++this.blocksThisTick;
         }
+
     }
 
     private boolean check() {
