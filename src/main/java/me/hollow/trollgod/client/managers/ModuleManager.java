@@ -20,6 +20,7 @@ public class ModuleManager {
         this.register(new ClickGui());
         this.register(new PopCounter());
         this.register(new MiddleClick());
+        this.register(new PearlNotify());
         this.register(new Manage());
         this.register(new Colours());
         this.register(new FontModule());
