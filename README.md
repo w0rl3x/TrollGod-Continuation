@@ -23,7 +23,7 @@
  1. DotGod PvPInfo (+custom watermark);
  2. Chat Messages Animation.
  3. PearlSolver
- 
+ 4. SelfTrap fixed
  
  
  ## credits:
