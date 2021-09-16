@@ -14,6 +14,8 @@
  7. Rewrite GUI to 3arthh4ck 1.0.0 exeter gui;
  8. Overall client features improvements.
  9. CapeChanger
+ 10. PearlSolver
+ 11. NoHandAnim
  
  The list of things to do will appear soon.
  
