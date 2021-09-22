@@ -155,7 +155,7 @@ extends Module {
             }
         }
         if ( this.welcomer.getValue ( ) ) {
-            String welcomerString = "Welcome, " + this.mc.player.getName();
+            String welcomerString = "Hello " + this.mc.player.getName() + " :^)";
             this.drawString(welcomerString, (float)resolution.getScaledWidth() / 2.0f - this.getStringWidth(welcomerString) / 2.0f, 2.0f, Colours.INSTANCE.getColor());
         }
         boolean inChat = this.mc.ingameGUI.getChatGUI().getChatOpen();

@@ -4,6 +4,7 @@ import com.mojang.authlib.GameProfile;
 import me.hollow.trollgod.TrollGod;
 import me.hollow.trollgod.client.events.MoveEvent;
 import me.hollow.trollgod.client.events.UpdateEvent;
+import me.hollow.trollgod.client.managers.ModuleManager;
 import me.hollow.trollgod.client.modules.combat.AutoFeetPlace;
 import me.hollow.trollgod.client.modules.combat.Burrow;
 import me.hollow.trollgod.client.modules.misc.AntiPush;
@@ -11,6 +12,11 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.MoverType;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.network.Packet;
+import net.minecraft.network.play.client.CPacketAnimation;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
@@ -59,6 +65,16 @@ extends AbstractClientPlayer {
     public void update2(CallbackInfo ci) {
         if (AutoFeetPlace.INSTANCE.isEnabled()) {
             AutoFeetPlace.INSTANCE.doPlace();
+        }
+    }
+
+    @Inject(method ="swingArm", at = @At("HEAD"), cancellable = true)
+    public void swingArm(final EnumHand enumHand, final CallbackInfo info) {
+        if (TrollGod.INSTANCE.getModuleManager().getModuleByLabel("NoSwing").isEnabled()) {
+            Item main = Minecraft.getMinecraft().player.getHeldItemMainhand().getItem();
+            Item off =  Minecraft.getMinecraft().player.getHeldItemOffhand().getItem();
+            Minecraft.getMinecraft().player.connection.sendPacket((Packet<?>) new CPacketAnimation(enumHand));
+            if ((enumHand == EnumHand.OFF_HAND && off.equals(Items.END_CRYSTAL)) || (enumHand == EnumHand.MAIN_HAND && main.equals(Items.END_CRYSTAL))) info.cancel();
         }
     }
 

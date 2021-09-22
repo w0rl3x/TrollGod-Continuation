@@ -17,6 +17,7 @@ public class ModuleManager {
 
     public void init() {
         this.register(new HUD());
+        this.register(new NoSwing());
         this.register(new ClickGui());
         this.register(new PopCounter());
         this.register(new MiddleClick());

@@ -56,11 +56,11 @@ implements Minecraftable {
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
         this.drag(mouseX, mouseY);
         float totalItemHeight = this.open ? this.getTotalItemHeight() - 2.0f : 0.0f;
-        RenderUtil.drawRect(this.x - 4, this.y - 2, this.x + this.width + 4, this.y + this.height - 6, new Color(ClickGui.getInstance().categoryRed.getValue(), ClickGui.getInstance().categoryGreen.getValue(), ClickGui.getInstance().categoryBlue.getValue(), ClickGui.getInstance().categoryAlpha.getValue()).getRGB());
+        RenderUtil.drawRect(this.x, this.y - 0.1f , this.x + this.width, this.y + this.height - 6, new Color(ClickGui.getInstance().categoryRed.getValue(), ClickGui.getInstance().categoryGreen.getValue(), ClickGui.getInstance().categoryBlue.getValue(), ClickGui.getInstance().categoryAlpha.getValue()).getRGB());
         if (this.open) {
             RenderUtil.drawRect(this.x, (float)this.y + 12.0f, this.x + this.width, (float)(this.y + this.height) + totalItemHeight, new Color(0, 0, 0, ClickGui.getInstance().alpha.getValue()).getRGB());
         }
-        TrollGod.fontManager.drawString(this.getName(), (float)this.x + (float)this.width / 2.0f - (float)(TrollGod.fontManager.getStringWidth(this.getName()) / 2), (float)this.y - 4.0f - (float)TrollGui.getClickGui().getTextOffset(), 0xFFFFFF);
+        TrollGod.fontManager.drawString(this.getName(), (float)this.x + 2, (float)this.y - 4.0f - (float)TrollGui.getClickGui().getTextOffset(), 0xFFFFFF);
         if (this.open) {
             float y = (float)(this.getY() + this.getHeight()) - 3.0f;
             for (int i = 0; i < this.getItems().size(); ++i) {
