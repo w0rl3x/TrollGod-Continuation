@@ -71,10 +71,8 @@ extends AbstractClientPlayer {
     @Inject(method ="swingArm", at = @At("HEAD"), cancellable = true)
     public void swingArm(final EnumHand enumHand, final CallbackInfo info) {
         if (TrollGod.INSTANCE.getModuleManager().getModuleByLabel("NoSwing").isEnabled()) {
-            Item main = Minecraft.getMinecraft().player.getHeldItemMainhand().getItem();
-            Item off =  Minecraft.getMinecraft().player.getHeldItemOffhand().getItem();
             Minecraft.getMinecraft().player.connection.sendPacket((Packet<?>) new CPacketAnimation(enumHand));
-            if ((enumHand == EnumHand.OFF_HAND && off.equals(Items.END_CRYSTAL)) || (enumHand == EnumHand.MAIN_HAND && main.equals(Items.END_CRYSTAL))) info.cancel();
+            info.cancel();
         }
     }
 
