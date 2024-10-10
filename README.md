@@ -1,5 +1,5 @@
 # TrollGod Continuation Project.
-> status: private
+> status: discontinued 
  ## This is a project based of TrollGod v1.5.2.
  > THIS SOURCECODE IS NOT AN ORIGINAL TROLLGOD. ORIGINAL TROLLGOD SOURCE CAN BE FOUND [HERE](https://github.com/notperry1234567890/TrollGod-v1.5.2-Buildable-SRC).
  
